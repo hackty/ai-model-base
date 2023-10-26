@@ -5,6 +5,7 @@ description = ""
 authors = ["taoyang <hackty@163.com>"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/hackty/ai-model-base"
 packages = [{ include = "ai_model_base" }]
 
 [tool.poetry.dependencies]
