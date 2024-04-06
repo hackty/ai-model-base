@@ -1,9 +1,13 @@
 from ai_model_base.model.BaseModel import BaseModel
 from ai_model_base.resource.factory.ModelFactory import ModelFactory
+from ai_model_base.resource.proxy.DynamicProxy import DynamicProxy
 
 
 class ModelPool:
     pool: dict[str, BaseModel] = {}
+
+    def get_model_by_name(self, model_name):
+        return DynamicProxy(model_name)
 
     def get_model_by_class(self, model_class):
         model_name = model_class.__name__

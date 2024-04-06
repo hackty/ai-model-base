@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ai-model-base"
-version = "0.0.1dev1"
+version = "0.0.1dev2"
 description = ""
 authors = ["taoyang <hackty@163.com>"]
 license = "MIT"
